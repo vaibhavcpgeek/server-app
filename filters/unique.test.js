@@ -21,7 +21,6 @@ describe("utils/unique.js", () => {
     ];
 
     const uniqueCollection = unique(collections);
-    console.log(uniqueCollection);
     expect(uniqueCollection.length).toBe(2);
   });
 });
