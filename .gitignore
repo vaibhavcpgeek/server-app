@@ -1,0 +1,23 @@
+node_modules/
+coverage/
+lib/
+.nyc_output
+.DS_Store
+.sass-cache
+*.map
+.idea
+*.log
+*.iml
+junitresults.xml
+
+# SONAR IGNORE
+*.properties
+.sonar
+log.*
+logs/*.log.*
+report-*.json
+
+**/test/reports/*.json
+**/test/reports/*.html
+**/test/reports/assets
+coverage/
