@@ -12,7 +12,7 @@ describe("services/album.js", () => {
 
   it("list should return correct response", async () => {
     const stub = {
-      resultCount: 50,
+      resultCount: 3,
       results: [
         {
           collectionId: "1",
@@ -38,5 +38,6 @@ describe("services/album.js", () => {
 
     const albums = await albumService.albums(artistId);
     expect(albums).to.deep.equal(stub);
+    expect(albums.resultCount).equal(albums.results.length);
   });
 });
