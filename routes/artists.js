@@ -1,7 +1,7 @@
 const express = require("express");
 const router = express.Router();
 const albumService = require("../services/album");
-const unique = require("./../utils/unique");
+const unique = require("./../filters/unique");
 
 /* GET Albums. */
 router.get("/:id/albums", async (req, res, next) => {
